@@ -1,1 +1,17 @@
+//1st Step: Create a View in the Schema. In this VIE_xxx
 CREATE SCHEMA vie; 
+
+
+//2nd Step: Create the View 
+CREATE VIEW VIE_xxx.MyView AS
+SELECT * FROM dbo.ExcelImpor
+
+
+//2nd.1 Step: Create the View by selecting individual columns
+CREATE VIEW VIE_xxx.MyView AS
+SELECT
+    [Column1],
+    [Column2],
+    [Column3]
+FROM dbo.ExcelImport;
+
